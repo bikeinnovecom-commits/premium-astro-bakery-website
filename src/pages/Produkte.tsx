@@ -5,7 +5,7 @@ import Reveal from '../components/Reveal';
 import SplitText from '../components/SplitText';
 import { products, heroImages } from '../data/images';
 
-const categories = ['Alle', 'Klassiker', 'Sauerteig', 'Süß', 'Snack', 'Premium', 'Viennoiserie', 'Café', 'Chocolat'];
+const categories = ['Alle', 'Backstube', 'Brötchen', 'Konditorei', 'Süßgebäck', 'Snack', 'Café'];
 
 export default function Produkte() {
   const [cat, setCat] = useState('Alle');
@@ -19,7 +19,7 @@ export default function Produkte() {
       />
 
       <Marquee
-        items={['Ofenfrisch', 'Handgemacht', 'Bio-Mehl', 'Steinofen', 'Bayerische Rezepte', 'Täglich neu']}
+        items={['Eigene Backstube', 'Handwerkliche Tradition', 'Geprüfte Rohstoffe', 'Aschaffenburg', 'Konditorei', 'Täglich frisch']}
         variant="gold"
         speed="fast"
       />
@@ -30,13 +30,13 @@ export default function Produkte() {
         <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl text-[#3b2617] leading-[0.95]">
           <span className="anim-widen block">Unsere</span>
           <span className="block italic text-gold-gradient anim-zoom" style={{ animationDelay: '.4s' }}>
-            Spezialitäten
+            Produkte
           </span>
         </h1>
         <Reveal delay={300}>
           <p className="mt-8 text-lg md:text-xl text-[#5a3a22] font-light max-w-2xl mx-auto leading-relaxed">
-            Von der Original Bayerischen Brezn bis zum 48-Stunden-Sauerteig: 
-            Jedes Stück wird von Hand geformt und im Steinofen gebacken.
+            Wir produzieren in unserer eigenen Backstube nach handwerklicher Tradition
+            mit ausgesuchten und geprüften Rohstoffen.
           </p>
         </Reveal>
       </section>
@@ -91,18 +91,20 @@ export default function Produkte() {
       {/* Horizontal quote strip */}
       <section className="bg-[#efe3cc] py-24 relative overflow-hidden">
         <div className="marquee-track slow reverse text-[#3b2617]/15 font-serif italic text-[6rem] md:text-[10rem] leading-none whitespace-nowrap select-none">
-          <span>Genuss · Handwerk · Bayern · Königsbrot ·&nbsp;</span>
-          <span>Genuss · Handwerk · Bayern · Königsbrot ·&nbsp;</span>
+          <span>Genuss · Handwerk · Tradition · Wenzel ·&nbsp;</span>
+          <span>Genuss · Handwerk · Tradition · Wenzel ·&nbsp;</span>
         </div>
         <div className="absolute inset-0 flex items-center justify-center px-6">
           <Reveal>
             <div className="text-center max-w-3xl">
-              <div className="divider text-xs uppercase tracking-[0.5em] mb-4">Meister-Empfehlung</div>
+              <div className="divider text-xs uppercase tracking-[0.5em] mb-4">Unser Anspruch</div>
               <h3 className="font-serif text-4xl md:text-6xl text-[#3b2617] leading-tight">
-                <SplitText text="Backen mit Zeit" />
+                <SplitText text="Backen ist Tradition" />
               </h3>
               <p className="mt-6 text-[#5a3a22] text-lg">
-                Unsere Brote reifen mindestens 24 Stunden – manche bis zu 72. Das entwickelt Geschmack, Bekömmlichkeit und die charakteristische, wilde Krume.
+                Wir produzieren in unserer eigenen Backstube nach handwerklicher Tradition
+                mit ausgesuchten und geprüften Rohstoffen. Zu unserem täglichen Angebot gehören
+                frisch belegte Vesperbrötchen und Stangen.
               </p>
             </div>
           </Reveal>
@@ -113,9 +115,9 @@ export default function Produkte() {
       <section className="max-w-7xl mx-auto px-6 py-24 md:py-32">
         <div className="grid md:grid-cols-3 gap-6">
           {[
-            { t: 'Bio-Mehl', d: 'Vom Berger Hof aus dem Chiemgau – kurze Wege, ehrliche Qualität.', icon: '🌾' },
-            { t: 'Steinofen', d: 'Gebacken seit 1954, mit Buchenholz aus dem Bayerischen Wald.', icon: '🔥' },
-            { t: 'Natursauerteig', d: 'Unser Anstellgut wird seit über 60 Jahren täglich gepflegt.', icon: '⚗️' },
+            { t: 'Backstube', d: 'In der Backstube dreht sich alles um das traditionelle Handwerk des Brotbackens – täglich frisch, mit regionalen Zutaten.', icon: '�' },
+            { t: 'Konditorei', d: 'Unsere Konditorei bietet ein umfangreiches Sortiment an feinen Kuchen, Torten und Süßgebäcken – für jeden besonderen Anlass.', icon: '🎂' },
+            { t: 'Seit 1929', d: 'Was Philipp und Katharina Wenzel 1929 begannen, führen wir in Familientradition fort – mit Leidenschaft, Sorgfalt und Erfahrung.', icon: '🌾' },
           ].map((f, i) => (
             <Reveal key={f.t} delay={i * 120}>
               <div className="card-lift bg-[#f7efe2] border border-[#a77a2c]/20 rounded-2xl p-8 h-full">

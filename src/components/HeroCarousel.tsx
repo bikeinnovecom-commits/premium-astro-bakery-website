@@ -88,7 +88,7 @@ export default function HeroCarousel({ slides = heroImages, eyebrow = 'Willkomme
 
         {/* Side ornament */}
         <div className="absolute top-1/2 -translate-y-1/2 left-4 md:left-8 z-10 text-white/60 text-[10px] tracking-[0.4em] font-light [writing-mode:vertical-rl] rotate-180 hidden md:block">
-          BÄCKEREI · KÖNIGSBROT · MÜNCHEN
+          BÄCKEREI-KONDITOREI · WENZEL · ASCHAFFENBURG
         </div>
       </div>
     </section>

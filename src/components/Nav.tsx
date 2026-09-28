@@ -34,18 +34,14 @@ export default function Nav({ current, onNavigate }: Props) {
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
         <button
           onClick={() => onNavigate('home')}
-          className="flex items-center gap-3 group"
+          className="flex items-center group"
         >
-          <div className="w-11 h-11 rounded-full bg-gradient-to-br from-[#c89a4b] to-[#5a3a22] flex items-center justify-center text-[#f7efe2] font-serif text-xl shadow-lg group-hover:rotate-12 transition-transform duration-500">
-            B
-          </div>
-          <div className="text-left leading-tight">
-            <div className="font-serif text-xl md:text-2xl text-[#3b2617] tracking-wide">
-              Bäckerei <span className="italic text-[#a77a2c]">Königsbrot</span>
-            </div>
-            <div className="text-[10px] uppercase tracking-[0.35em] text-[#a77a2c]/80">
-              Bayerische Handwerkskunst · 1897
-            </div>
+          <div className="bg-white/20 backdrop-blur-md border border-white/40 rounded-xl px-3 py-1.5 shadow-sm group-hover:bg-white/30 transition-all duration-300">
+            <img
+              src="/logo-wenzel.png"
+              alt="Bäckerei-Konditorei Wenzel"
+              className="h-12 w-auto object-contain"
+            />
           </div>
         </button>
 
@@ -70,7 +66,7 @@ export default function Nav({ current, onNavigate }: Props) {
             onClick={() => onNavigate('kontakt')}
             className="ml-4 px-6 py-3 rounded-full bg-[#3b2617] text-[#f7efe2] text-xs uppercase tracking-[0.3em] hover:bg-[#a77a2c] transition-colors duration-500"
           >
-            Bestellen
+            Bewerben
           </button>
         </nav>
 
