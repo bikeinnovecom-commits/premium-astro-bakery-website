@@ -36,13 +36,6 @@ export default function Nav({ current, onNavigate }: Props) {
           onClick={() => onNavigate('home')}
           className="flex items-center group"
         >
-          <div className="bg-white/20 backdrop-blur-md border border-white/40 rounded-xl px-3 py-1.5 shadow-sm group-hover:bg-white/30 transition-all duration-300">
-            <img
-              src="/logo-wenzel.png"
-              alt="Bäckerei-Konditorei Wenzel"
-              className="h-12 w-auto object-contain"
-            />
-          </div>
         </button>
 
         <nav className="hidden lg:flex items-center gap-1">

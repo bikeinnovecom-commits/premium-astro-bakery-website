@@ -6,9 +6,6 @@ export default function Footer({ onNavigate }: Props) {
       <div className="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_20%_20%,#c89a4b,transparent_50%)]" />
       <div className="relative max-w-7xl mx-auto px-6 py-20 grid md:grid-cols-4 gap-12">
         <div className="md:col-span-2">
-          <div className="inline-block bg-white/15 backdrop-blur-md border border-white/25 rounded-xl px-4 py-2">
-            <img src="/logo-wenzel.png" alt="Bäckerei-Konditorei Wenzel" className="h-14 w-auto object-contain" />
-          </div>
           <p className="mt-4 text-[#efe3cc]/70 max-w-md leading-relaxed">
             Wir produzieren in unserer eigenen Backstube nach handwerklicher Tradition
             mit ausgesuchten und geprüften Rohstoffen. Backen ist bei uns Tradition seit 1929.
